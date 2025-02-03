@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Pp mori";
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+#page1{
+    min-height:100vh;
+    width: 100%;
+    display:flex;
+}
+#part1{
+    min-height: 100vh;
+    width: 50%;
+}
+.p1{
+    height: 100vh;
+    background: url(https://uploads-ssl.webflow.com/5d0ddf928a9068c07d0057d9/5d0de26dd79cca5d2a950bae_img-bg-1.jpg);
+    background-position: center;
+    background-size: cover;
+    color:white;
+    display:flex;
+    align-items: flex-end;
+    padding:2vw;
+}
+.text{
+    display:flex;
+    flex-direction: column;
+    gap:2vw;
+    width:65%;
+}
+.text h2{
+    font-size:1.8vw;
+}
+.text p{
+    font-size:3.3vw;
+}
+#part2{
+    position: relative;
+    overflow-x: hidden;
+    width: 50%;
+    min-height: 100vh;
+    background-color: #d86b10;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.tt{
+    position: absolute;
+    display: flex;
+    gap:1vw;
+    z-index:0;
+}
+.tt p{
+    font-size:14vw;
+    color:hsla(0,0%,100%,0.1)
+}
+img{
+    position: relative;
+    width: 11.8vw;
+    height: 45.5vw;
+}
+.firstimg{
+    transform: translate3d(1vw, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    z-index: 2;
+}
+.secondimg{
+    position: absolute;
+    transform:translate3d(25vw, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    z-index: 1;
+    rotate:30;
+    opacity: 0;
+}
